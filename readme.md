@@ -23,7 +23,7 @@ What this is:
 
 -A labor of love.
 
--NOT GARANTEED IN ANY WAY. There may be days where I simply don't have the time to update the list. It is what it is, and I simply do my best.
+-NOT GUARANTEED IN ANY WAY. There may be days where I simply don't have the time to update the list. It is what it is, and I simply do my best.
 
 -Not possible without other researchers doing the bulk of the work. I just gather it into one place for redistribution and add some contextual data.
 
