@@ -2,13 +2,23 @@
 
 An Open-Source Malware Intelligence collection with additional data and context where availble.
 
-What this list is:
+The data you want to review is in compiled_shitlist.txt
+The data is formatted like so:
+name of threat
+source where data came from
+supporting links
+sha256 hashes
+IPs/Domains
+
+There is also a day/month indicator that indicates when the data was added.
+
+What this is:
 -A collection of IP addresses, domains, sha256 hashes and other neat things here and there that I believe are worth mentioning collected through open sources.
 -A labor of love.
 -NOT GARANTEED IN ANY WAY. There may be days where I simply don't have the time to update the list. It is what it is, and I simply do my best.
 -Not possible without other researchers doing the bulk of the work. I just gather it into one place for redistribution and add some contextual data.
 
-What this list is not:
+What this is not:
 -An official Cisco or TALOS product. Cisco and its properties are in no way responsible for the contents of this blacklist and will not be held responsible for the contents of this list.
 -If you take issue with any of the contents of this list, wish to be removed from this list, etc., feel free to submit an issue via github or otherwise get a hold of me. CISCO CANNOT AND WILL NOT HELP YOU WITH THIS BLACKLIST.
 
