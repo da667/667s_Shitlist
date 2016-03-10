@@ -4,10 +4,15 @@ An Open-Source Malware Intelligence collection with additional data and context 
 
 The data you want to review is in compiled_shitlist.txt
 The data is formatted like so:
+
 name of threat
+
 source where data came from
+
 supporting links
+
 sha256 hashes
+
 IPs/Domains
 
 There is also a day/month indicator that indicates when the data was added.
