@@ -1,0 +1,186 @@
+These are pieces of data and IOCs associated with IRONGATE.
+https://www.fireeye.com/blog/threat-research/2016/06/irongate_ics_malware.html
+https://github.com/fireeye/iocs
+
+PyInstaller Artifacts
+
+path:C:\Users\Main\Desktop\pyinstaller-2.0\PyInstaller\loader\iu.py
+magic:BIN
+arch:NA
+size:18,120
+md5:A79596BCCA537FA3FA45037F4855FD00
+compile time:2014-10-27 17:33:57Z
+
+path:C:\Users\Main\Desktop\pyinstaller-2.0\PyInstaller\loader\archive.py
+magic:BIN
+arch:NA
+size:16,506
+md5:026BC58300DE02455937CEF46405F065
+compile time:2014-10-27 17:33:57Z
+
+PyInstaller Artifacts associated with update.exe(2) (EF2A97512FDB45CD26089AD2FF61F1CC)
+
+path:C:\Python27\Lib\site-packages\Pylnstaller\loader\pyi_os_path.py
+magic:BIN
+arch:NA
+size:2,445
+md5:EC07A5ECB182960777007AFE2C077A1D
+compile time:2014-09-24 07:59:14Z
+
+path:C:\Python27\Lib\site-packages\PyInstaller\loader\pyi_archive.py
+magic:BIN
+arch:NA
+size:12,159
+md5:9B588ADB1D0AE72CEB4051031FD1F1F3
+compile time:2014-09-24 07:59:14Z
+
+path:C:\Python27\Lib\site-packages\PyInstaller\loader\pyi_importers.py
+magic:BIN
+arch:NA
+size:12,882
+md5:EDA021ACACA81AE99E39ECCDA0163295
+compile time:2014-09-24 07:59:14Z
+
+filename:bla.exe
+magic:PE.EXE
+arch:X86
+size:3,316,353
+md5:957581FB38A4E76E84F60E2BB19B9499
+compile time:2012-05-25 09:26:27Z
+
+filename:update.exe(1)
+magic:PE.EXE
+arch:X86
+size:3,377,275
+md5:75D118996F5190EDAFCA1B1904A7EEA8
+compile time:2012-05-25 09:26:27Z
+
+filename:update_no_pipe.exe(1)
+magic:PE.EXE
+arch:X86
+size:3,319,829
+md5:9F37E1EA08E6A4AE03E9FEBA6D1F6259
+compile time:2012-05-25 09:26:27Z
+
+filename:update_no_pipe.exe(2)
+magic:PE.EXE
+arch:X86
+size:3,319,825
+md5:3152F21D701A2397E7B22711B8019B82
+compile time:2012-05-25 09:26:27Z
+
+filename:update.exe(2)
+magic:PE.EXE
+arch:X86
+size:4,283,142
+md5:EF2A97512FDB45CD26089AD2FF61F1CC
+compile time:2013-03-23 22:26:54Z
+
+filename:update.exe(3)
+magic:PE.EXE
+arch:X86
+size:2,768,872
+md5:41906403206EA5C7DCDBFAE230ADD9FA
+compile time:2012-05-25 09:26:27Z
+
+filename:audiodg.exe
+magic:PE.EXE
+arch:X86
+size:44,544
+md5:7A0C1017E6B5BB5DC776B3B883A1D0E0
+compile time:2013-10-31 20:17:26Z
+
+filename:scada.exe
+magic:PE.EXE
+arch:X86
+size:18,432
+md5:874F7BCAB71F4745EA6CDA2E2FB5A78C
+compile time:2014-09-28 23:57:13Z
+
+filename:install.exe
+magic:PE.EXE
+arch:X86
+size:150,328
+md5:1F338BDD92F08803A2AC7022A34D98FD
+compile time:2006-08-16 17:28:36Z
+
+filename:Step7ProSim.dll
+magic:PE.DLL
+arch:X86
+size:9,728
+md5:7C51474E6560C51DFC815D4A227BA1AA
+compile time:2014-09-28 23:52:13Z
+
+string dumps in scada.exe (874F7BCAB71F4745EA6CDA2E2FB5A78C)
+
+PackagingModule.exe
+DllProxyInstaller 
+FindFile
+FindFilelnDrive
+InstallProxy
+dllFilename
+newD11Filename
+PackagingModule.Step7ProSim.d11
+  2014
+$ccc64bc5-ef95-4217-adc4-5bf0d448c272
+c:\Users\Main\Desktop\PackagingModule\PackagingModule\obj\Release\PackagingModule.pdb
+
+string dumps in Step7ProSim.dll (7C51474E6560C51DFC815D4A227BA1AA)
+
+Step7ProSim.d11
+IStep7ProSim
+Step7ProSim.Interfaces
+waitBeforeRecordingTimeInMilliSeconds
+waitBeforePlayingRecordsTimeInMilliSeconds
+payloadExecutionTimeInMilliSeconds
+waitBeforePlayingRecordsTimer
+waitBeforeRecordingTimer
+payloadExecutionTimer
+Step7ProSimProxy
+$863d8af0-cee6-4676-96ad-13e8540f4d47
+c:\Users\Main\Desktop\Step7ProSimProxy\Step7ProSimProxy\obj\Release\Step7ProSim.pdb 
+
+rule IRONGATE_ICS_packagingmodule {
+	meta:
+		description: "Detects the IRONGATE packaging module"
+		author: "da_667"
+		reference: "https://www.fireeye.com/blog/threat-research/2016/06/irongate_ics_malware.html"
+		date: "2016-06-02"
+	strings:
+		$s1 = "PackagingModule.exe" fullword ascii
+		$s2 = "DllProxyInstaller" fullword ascii
+		$s3 = "FindFile" fullword ascii
+		$s4 = "FindFilelnDrive" fullword ascii
+		$s5 = "InstallProxy" fullword ascii
+		$s6 = "dllFilename" fullword ascii
+		$s7 = "newD11Filename" fullword ascii
+		$s8 = "PackagingModule.Step7ProSim.d11" fullword ascii
+		$s9 = "2014" fullword ascii
+		$s10 = "$ccc64bc5-ef95-4217-adc4-5bf0d448c272" fullword ascii
+		$s11 = "c:\Users\Main\Desktop\PackagingModule\PackagingModule\obj\Release\PackagingModule.pdb" fullword ascii
+	condition:
+		all of them
+}
+
+rule IRONGATE_ICS_dllproxy {
+	meta:
+		description: "Detections the IRONGATE SIEMENS Step7ProSim DLL Proxy"
+		author: "da_667"
+		reference: "https://www.fireeye.com/blog/threat-research/2016/06/irongate_ics_malware.html"
+		date: "2016-06-02"
+	strings:
+		$s1Step7ProSim.d11" fullword ascii
+		$s2 = "IStep7ProSim" fullword ascii
+		$s3 = "Step7ProSim.Interfaces" fullword ascii
+		$s4 = "waitBeforeRecordingTimeInMilliSeconds" fullword ascii
+		$s5 = "waitBeforePlayingRecordsTimeInMilliSeconds" fullword ascii
+		$s6 = "payloadExecutionTimeInMilliSeconds" fullword ascii
+		$s7 = "waitBeforePlayingRecordsTimer" fullword ascii
+		$s8 = "waitBeforeRecordingTimer" fullword ascii
+		$s9 = "payloadExecutionTimer" fullword ascii
+		$s10 = "Step7ProSimProxy" fullword ascii
+		$s11 = "$863d8af0-cee6-4676-96ad-13e8540f4d47" fullword ascii
+		$s12 = "c:\Users\Main\Desktop\Step7ProSimProxy\Step7ProSimProxy\obj\Release\Step7ProSim.pdb" fullword ascii
+	condition:
+		all of them
+}
