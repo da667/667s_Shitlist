@@ -169,7 +169,7 @@ rule IRONGATE_ICS_dllproxy {
 		reference: "https://www.fireeye.com/blog/threat-research/2016/06/irongate_ics_malware.html"
 		date: "2016-06-02"
 	strings:
-		$s1Step7ProSim.d11" fullword ascii
+		$s1 = "Step7ProSim.d11" fullword ascii
 		$s2 = "IStep7ProSim" fullword ascii
 		$s3 = "Step7ProSim.Interfaces" fullword ascii
 		$s4 = "waitBeforeRecordingTimeInMilliSeconds" fullword ascii
