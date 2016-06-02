@@ -157,7 +157,7 @@ rule IRONGATE_ICS_packagingmodule {
 		$s8 = "PackagingModule.Step7ProSim.d11" fullword ascii
 		$s9 = "2014" fullword ascii
 		$s10 = "$ccc64bc5-ef95-4217-adc4-5bf0d448c272" fullword ascii
-		$s11 = "c:\Users\Main\Desktop\PackagingModule\PackagingModule\obj\Release\PackagingModule.pdb" fullword ascii
+		$s11 = "c:\\Users\\Main\\Desktop\\PackagingModule\\PackagingModule\\obj\\Release\\PackagingModule.pdb" fullword ascii
 	condition:
 		all of them
 }
@@ -180,7 +180,7 @@ rule IRONGATE_ICS_dllproxy {
 		$s9 = "payloadExecutionTimer" fullword ascii
 		$s10 = "Step7ProSimProxy" fullword ascii
 		$s11 = "$863d8af0-cee6-4676-96ad-13e8540f4d47" fullword ascii
-		$s12 = "c:\Users\Main\Desktop\Step7ProSimProxy\Step7ProSimProxy\obj\Release\Step7ProSim.pdb" fullword ascii
+		$s12 = "c:\\Users\\Main\\Desktop\\Step7ProSimProxy\\Step7ProSimProxy\\obj\\Release\\Step7ProSim.pdb" fullword ascii
 	condition:
 		all of them
 }
