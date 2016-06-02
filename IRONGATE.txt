@@ -119,15 +119,15 @@ FindFile
 FindFilelnDrive
 InstallProxy
 dllFilename
-newD11Filename
-PackagingModule.Step7ProSim.d11
+newDllFilename
+PackagingModule.Step7ProSim.dll
   2014
 $ccc64bc5-ef95-4217-adc4-5bf0d448c272
 c:\Users\Main\Desktop\PackagingModule\PackagingModule\obj\Release\PackagingModule.pdb
 
 string dumps in Step7ProSim.dll (7C51474E6560C51DFC815D4A227BA1AA)
 
-Step7ProSim.d11
+Step7ProSim.dll
 IStep7ProSim
 Step7ProSim.Interfaces
 waitBeforeRecordingTimeInMilliSeconds
@@ -153,8 +153,8 @@ rule IRONGATE_ICS_packagingmodule {
 		$s4 = "FindFilelnDrive" fullword ascii
 		$s5 = "InstallProxy" fullword ascii
 		$s6 = "dllFilename" fullword ascii
-		$s7 = "newD11Filename" fullword ascii
-		$s8 = "PackagingModule.Step7ProSim.d11" fullword ascii
+		$s7 = "newDllFilename" fullword ascii
+		$s8 = "PackagingModule.Step7ProSim.dll" fullword ascii
 		$s9 = "2014" fullword ascii
 		$s10 = "$ccc64bc5-ef95-4217-adc4-5bf0d448c272" fullword ascii
 		$s11 = "c:\\Users\\Main\\Desktop\\PackagingModule\\PackagingModule\\obj\\Release\\PackagingModule.pdb" fullword ascii
@@ -169,7 +169,7 @@ rule IRONGATE_ICS_dllproxy {
 		reference: "https://www.fireeye.com/blog/threat-research/2016/06/irongate_ics_malware.html"
 		date: "2016-06-02"
 	strings:
-		$s1 = "Step7ProSim.d11" fullword ascii
+		$s1 = "Step7ProSim.dll" fullword ascii
 		$s2 = "IStep7ProSim" fullword ascii
 		$s3 = "Step7ProSim.Interfaces" fullword ascii
 		$s4 = "waitBeforeRecordingTimeInMilliSeconds" fullword ascii
