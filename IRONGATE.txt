@@ -1,4 +1,5 @@
 These are pieces of data and IOCs associated with IRONGATE.
+For any and all entries I could find on Virustotal, I gathered additional hashes and submission dates/countries.
 https://www.fireeye.com/blog/threat-research/2016/06/irongate_ics_malware.html
 https://github.com/fireeye/iocs
 
@@ -8,14 +9,14 @@ path:C:\Users\Main\Desktop\pyinstaller-2.0\PyInstaller\loader\iu.py
 magic:BIN
 arch:NA
 size:18,120
-md5:A79596BCCA537FA3FA45037F4855FD00
+MD5:A79596BCCA537FA3FA45037F4855FD00
 compile time:2014-10-27 17:33:57Z
 
 path:C:\Users\Main\Desktop\pyinstaller-2.0\PyInstaller\loader\archive.py
 magic:BIN
 arch:NA
 size:16,506
-md5:026BC58300DE02455937CEF46405F065
+MD5:026BC58300DE02455937CEF46405F065
 compile time:2014-10-27 17:33:57Z
 
 PyInstaller Artifacts associated with update.exe(2) (EF2A97512FDB45CD26089AD2FF61F1CC)
@@ -24,91 +25,160 @@ path:C:\Python27\Lib\site-packages\Pylnstaller\loader\pyi_os_path.py
 magic:BIN
 arch:NA
 size:2,445
-md5:EC07A5ECB182960777007AFE2C077A1D
+MD5:EC07A5ECB182960777007AFE2C077A1D
 compile time:2014-09-24 07:59:14Z
 
 path:C:\Python27\Lib\site-packages\PyInstaller\loader\pyi_archive.py
 magic:BIN
 arch:NA
 size:12,159
-md5:9B588ADB1D0AE72CEB4051031FD1F1F3
+MD5:9B588ADB1D0AE72CEB4051031FD1F1F3
 compile time:2014-09-24 07:59:14Z
 
 path:C:\Python27\Lib\site-packages\PyInstaller\loader\pyi_importers.py
 magic:BIN
 arch:NA
 size:12,882
-md5:EDA021ACACA81AE99E39ECCDA0163295
+MD5:EDA021ACACA81AE99E39ECCDA0163295
 compile time:2014-09-24 07:59:14Z
 
 filename:bla.exe
 magic:PE.EXE
 arch:X86
 size:3,316,353
-md5:957581FB38A4E76E84F60E2BB19B9499
+MD5:957581FB38A4E76E84F60E2BB19B9499
+SHA-1:8fb1cafbb8ca65c1b8236a20079c40fb4ffbaa68
+SHA-256:ed7a5e48113b1fd206e6a8c46671eb37dab864d1bd6fe44714a0ae377cf1248a
+ssdeep:98304:5MGtTsl+6misxzYmaKZMoFfSbqgGEGPfx1cdfabXHAFev:5btJ1z9fFspAPclwXAYv
+authentihash:446eb71fefc006f94844d28fe47ea18b7efa1dc21a498aa32befb03c99e4e93b
+imphash:b8d12c04de39a167757fe4a34efa01e6
+First Submission:2014-10-28 15:04:27 
+Country:IL (Israel)
+Second Submission:2015-08-19 16:59:42 
+Country:US (United States)
 compile time:2012-05-25 09:26:27Z
 
 filename:update.exe(1)
 magic:PE.EXE
 arch:X86
 size:3,377,275
-md5:75D118996F5190EDAFCA1B1904A7EEA8
+MD5:75d118996f5190edafca1b1904a7eea8
+SHA-1:b99970e86ae3f412bda5f20a8318e70559c617f6
+SHA-256:2044712ceb99972d025716f0f16aa039550e22a63000d2885f7b7cd50f6834e0
+ssdeep:98304:5MPh9pyKnmaKZMoFfSbqgGEGPfx1cdfabXHAFel:5sArfFspAPclwXAYl
+authentihash:0c76fa38ac6ec72940e74c6766593e10f479d4c1bde89ba3a0b2cfbc1fec0e78
+imphash:b8d12c04de39a167757fe4a34efa01e6 
+First Submission:2014-10-28 14:41:56 
+Country:IL (Israel)
+Second Submission:2014-11-04 02:34:20 
+Country:SG (Singapore)
 compile time:2012-05-25 09:26:27Z
 
 filename:update_no_pipe.exe(1)
 magic:PE.EXE
 arch:X86
 size:3,319,829
-md5:9F37E1EA08E6A4AE03E9FEBA6D1F6259
+MD5:9f37e1ea08e6a4ae03e9feba6d1f6259
+SHA-1:8f28e619ae3301869089f4cd45558f2b13444714
+SHA-256:a7937011e9da51475e91ab1f007d09bd97dfb94d23683a0f73b7bb85de8f9b27
+ssdeep:98304:5M7Fmur8bnsZtomaKZMoFfSbqgGEGPfx1cdfabXHAFep:5wAur8AxfFspAPclwXAYp
+authentihash:74822b56c776e0478322d9f31500415b1f34557d4c5453c31bcb1ec5e81a9771
+imphash:b8d12c04de39a167757fe4a34efa01e6
+First Submission:2014-10-28 15:01:26 
+Country:IL (Israel)
+Second Submission:2016-06-02 12:52:18 
+Country:RU (Russia)
 compile time:2012-05-25 09:26:27Z
 
 filename:update_no_pipe.exe(2)
 magic:PE.EXE
 arch:X86
 size:3,319,825
-md5:3152F21D701A2397E7B22711B8019B82
+MD5:3152f21d701a2397e7b22711b8019b82
+SHA-1:97594fe0ad83ae00f3888ff4722a3e00729a2e1b
+SHA-256:882878f2bf5a67de3fde30816fe304e42f6ce18d0160674f6d4ec3b061b2821a
+ssdeep:98304:5M7Fmur8bnsZtxomaKZMoFfSbqgGEGPfx1cdfabXHAFe5:5wAur8ATfFspAPclwXAY5
+authentihash:717c0c80a1827a5b43a22e9a585bc013271ea04a83ab4456edf9c02bb03c7896
+imphash:b8d12c04de39a167757fe4a34efa01e6 
+First Submission:2014-10-28 14:46:36 
+Country:IL (Israel) 
+Second Submission:2016-06-02 14:28:32
+Country:US (United States)
 compile time:2012-05-25 09:26:27Z
 
 filename:update.exe(2)
 magic:PE.EXE
 arch:X86
 size:4,283,142
-md5:EF2A97512FDB45CD26089AD2FF61F1CC
+MD5	EF2A97512FDB45CD26089AD2FF61F1CC
+SHA-1	bcdac11106908c8c37f200c0e028b11c4a89adc9
+SHA-256:386ed16fece9cc24c4d123cdf91a371829098ba7abd4c8fefb40b4e376e7ac6a
+ssdeep:98304:01LMvC84g0cR35bmaKZIFQvRVYDvDzpzL0zsmt:01L60I3MeIYbDzRvm
+authentihash:3e7dc7f228c3fa1a7f5ec400b374eefda7d642a8cb7fcf29aaaf2fcec428037c
+imphash:b87afca7a1175b7eb49b7c1eb6d58adf
+First Submission:2014-09-29 14:17:42 
+Country:IL (Israel)
+Second Submission:2014-11-04 02:41:04 
+Country:SG (Singapore)
 compile time:2013-03-23 22:26:54Z
 
 filename:update.exe(3)
 magic:PE.EXE
 arch:X86
 size:2,768,872
-md5:41906403206EA5C7DCDBFAE230ADD9FA
+MD5:41906403206EA5C7DCDBFAE230ADD9FA
 compile time:2012-05-25 09:26:27Z
 
-filename:audiodg.exe
+filename:audiodg.exe (NetResView.exe, UPX packed)
 magic:PE.EXE
 arch:X86
 size:44,544
-md5:7A0C1017E6B5BB5DC776B3B883A1D0E0
+MD5:7a0c1017e6b5bb5dc776b3b883a1d0e0
+SHA-1:9efe39c0a6bff5dc18d3adf3b9522b5346cdbb9b
+SHA-256:83f0352c14fa62ae159ab532d85a2b481900fed50d32cc757aa3f4ccf6a13bee
+ssdeep:768:swGz/6Uu1SvAIHQCtuQEIjsiTreyrvJN4CSt/mFnbtAOdpnd:LGzyZAvhHTuvQsMtWCSFmFnbtAO3d
+authentihash:9568c1acebc84e2c60813695ee2f72b46bad75b17a1f310ba44ab2a9dfc81334
+imphash:4fc5647ffcb60134ae2a7f5ae24ca8b9
 compile time:2013-10-31 20:17:26Z
 
 filename:scada.exe
 magic:PE.EXE
 arch:X86
 size:18,432
-md5:874F7BCAB71F4745EA6CDA2E2FB5A78C
+MD5:874f7bcab71f4745ea6cda2e2fb5a78c
+SHA-1:7e6cce889cda22b18defc6319d02b3b93e9e2474
+SHA-256:0539af1a0cc7f231af8f135920a990321529479f6534c3b64e571d490e1514c3
+ssdeep:192:t0deubawqyepjCiOmsHp/owGjEu/mzKwOgLKDML9sGxlpO0x2lHlCPilG/M5hw17:mD72+msJ/oDEaRMZL7g 0x2bCZM6
+authentihash:6c7f43411bc4fdcf350565efb2ecb4ef4aeb09a5ffc4cade1dd8a296edb82516
+imphash:f34d5f2d4577ed6d9ceec516c1f5a744
+First Submission:2014-09-29 15:10:26 
+Country:IL (Israel)
+Second Submission:2014-11-04 02:39:04
+Country:SG (Singapore)
 compile time:2014-09-28 23:57:13Z
 
-filename:install.exe
+filename:install.exe (pipelist.exe -sysinternals)
 magic:PE.EXE
 arch:X86
 size:150,328
-md5:1F338BDD92F08803A2AC7022A34D98FD
+MD5:1f338bdd92f08803a2ac7022a34d98fd
+SHA-1:38ec222e82b538c8607485d4dd191b5b4eed4fdd
+SHA-256:750aa0302e59da6c3e853c89c76c5f44125394c34cb0a8c70d756b3064f7cdff
+ssdeep:768:cl7foMcKdOU8BnOPwGl/4Jtc7/nS5ltpm5gQAv1hezge9ZZ1Zt8R1UYYRIuNYpaN:cl7u1BnOP1lgtldkmVn TA6uvHlHaeH3
+authentihash:4d085c658aca37ef8a1af411e9ba9898ac63d6c68373cd4bf87668030a90446f
+imphash:266fbb448c826115d3a974ad4a7e81a4
 compile time:2006-08-16 17:28:36Z
 
 filename:Step7ProSim.dll
 magic:PE.DLL
 arch:X86
 size:9,728
-md5:7C51474E6560C51DFC815D4A227BA1AA
+MD5:7c51474e6560c51dfc815d4a227ba1aa
+SHA-1:66ce4b32afedac934904000715550fabe8e3691f
+SHA-256:fa8400422f3161206814590768fc1a27cf6420fc5d322d52e82899ac9f49e14f
+ssdeep:192:AwqyepjCiOmsHp/owGjEu/mzKwOgLKDML9:T72+msJ/oDEaRMZ
+authentihash:581c79bdc02bce78fd48e088ec8e0e16361fcde5923ea43547a0d16d457634dd
+imphash:dae02f32a21e03ce65412f6e56942daa 
 compile time:2014-09-28 23:52:13Z
 
 string dumps in scada.exe (874F7BCAB71F4745EA6CDA2E2FB5A78C)
@@ -139,6 +209,8 @@ payloadExecutionTimer
 Step7ProSimProxy
 $863d8af0-cee6-4676-96ad-13e8540f4d47
 c:\Users\Main\Desktop\Step7ProSimProxy\Step7ProSimProxy\obj\Release\Step7ProSim.pdb 
+
+Interesting Errata: If you'll notice above, a lot of the files that I could find on Virustotal were initially submitted from IL (Israel), Nearly two years ago around September/October of 2014. Additionally, all these submissions from Israel share the same VTID: 3137edf6. 
 
 rule IRONGATE_ICS_packagingmodule {
 	meta:
