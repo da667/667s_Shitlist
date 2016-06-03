@@ -14961,3 +14961,5 @@ It's believed that turkey's entire citizenship data may have been leaked. 185.10
 Quanta LTE routers have massive vulnerabilities, at least two RCEs, several backdoors, etc. https://pierrekim.github.io/blog/2016-04-04-quanta-lte-routers-vulnerabilities.html
 DHS releases information about cyber attacks to the US power grid observed in FY 2014: https://info.publicintelligence.net/DHS-CyberAttacksEnergySector.pdf
 oh yeah. #panamapapers is a thing. Something about laundering bitcoins in the panama canal? lotta people angry about that :(
+
+#Change of plans. This file is close to 15,000 lines long. and it hasn't been updated in close to a month. I'm going to switch to a daily  blacklist with an easier to grok/grep out format. See blacklist_6_2_16.txt for more details.
