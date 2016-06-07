@@ -2,7 +2,7 @@
 #Source lines (e.g. where I got this from and/or other errata will be placed into lines starting with a hashmark/octothorpe)
 #Lines that begin with HASH: are sha256 file hashes, if I have them.
 #If all you are interested in is IPs/Domains:
-# cat blacklist_mm_dd_yy.txt | egrep -v "^#|HASH::" > blacklist.txt
+# cat blacklist_mm_dd_yy.txt | egrep -v "^#|HASH:" > blacklist.txt
 #If all you want are file hashes:
 # cat blacklist_mm_dd_yy.txt | egrep "HASH:" > hashes.txt
 #6/2/16
