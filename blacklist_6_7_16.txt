@@ -1,0 +1,134 @@
+#Each day that I generate a new copy of the shitlist, I will place into a file named blacklist_mm_dd_yy.txt
+#Source lines (e.g. where I got this from and/or other errata will be placed into lines starting with a hashmark/octothorpe)
+#Lines that begin with HASH: are sha256 file hashes, if I have them.
+#If all you are interested in is IPs/Domains:
+# cat blacklist_mm_dd_yy.txt | egrep -v "^#|HASH:" > blacklist.txt
+#If all you want are file hashes:
+# cat blacklist_mm_dd_yy.txt | egrep "HASH:" > hashes.txt
+#6/7/16
+
+#Qarallax RAT
+#via @bartblaze
+#https://otx.alienvault.com/pulse/5756b9746eb8c60134a9e203/
+#https://otx.alienvault.com/pulse/574ea19bdc99310134d42748/
+HASH:e748f8c1c1a0cd469a9e7dfb0c879557e9b45bd45e35c35d66d322cdb45a7cdf
+HASH:f80ab59d44dba7c664473a97596f5dd8c8b563e4da3852c987dec6a739ce1ada
+HASH:cb8a86e8e0a4b465b457725d0afb1f0dc86e804b482aeb0291d86feb0cae7ece
+HASH:55940580a85bf951f12fd3c676215411aca279285c2830b92c1a3b322289edfb
+HASH:00443161b94f99d815b16bfdc712bef764033390526f9996c15f9f299d37e15c
+HASH:9aae01d12e63de2b0162a1dee8bade1f38f0f6e35fa2d330d1ea64672213eff2
+HASH:ffba176ba6f61bfbb5c1c5a541e5298f9895b86a751a74bdea82de0ab598558d
+HASH:0d5785f13649c1ffdcf9d72d3d75ba634dcfe7c4d95ba33c7fb414639992c461
+HASH:289d4bd20bb51cdbdc9be509bce54b5c1ae075472605d6369218628fd60a6bea
+HASH:4e5c18f15c24c03adbdad9b238b291cb736d3efe59360994e3d0c5e64e0049ba
+HASH:ef8e4178eef306f55ea6ea9c74d146512997b81ee08b0e40997baa9bfed4626a
+HASH:19c6cd90c88ac5ca99e3dbfdb7e0e5cd34dafce114632d3d1ea8bde7d56e71db
+HASH:6df2034f4e05d5dc08696b7db6a030b8e77f7e43033b6a71417c5bbf1bc4bfc8
+HASH:0fa4189fc1a7e027af4a42ec5d2b86b03bbc2edd1b8737d4cc3cde991dec23d0
+HASH:77a05dc504a76bcee4e04dd654170ae6cb44e70e453d015ae72ddd254b7ee0ce
+HASH:1589e91ac55f1bce57573d5548f648be92d460e62e57b3680d09c8e4b8b6dded
+HASH:c80a3f807b2d699ed2dc6bdd8e416928916c391c35a0595b3d0ba79e18f86c0b
+HASH:ae0096f10561232df33c6a9de128488a6981d130f7fabbfb56c14e373673239f
+HASH:74bbd75466de2f9ac195f2934726f1d3b60290409bb21f22891c26e8e3cd27c4
+HASH:e77fab8575eb32a0b04bae4789d0b9fb90b607cf62457e7e633f99de471fe0fe
+HASH:2e253d91cced925973454179f49654022836c575ae712fb57005c8a85561067b
+HASH:878fde76c8d506b5fe77744cb2cb916c2b798a9cb5c2b30067855fe560e15605
+HASH:1fee54020f4a9bb2aa679798e482c13cf2d97b5a891c3617cd9853cdfa82c50f
+qarallax.com
+coneptor.qarallax.com
+lib.qarallax.com
+plugin.qarallax.com
+connecter.qarallax.com
+95.211.141.215
+198.211.116.109
+37.48.124.107
+213.152.181.50
+37.48.124.107
+46.101.126.140
+85.17.30.134
+
+#GBAs/Suspicious domains
+#37.48.124.107 was hosting coneptor.qarallax.com ~2 months ago
+#so I decided to pull on this thread for funsies, and see what other domains I could find.
+#There's a lot of dynamic dns here, so while I don't have an exact threat tied to these IPs..
+#They're probably not good.
+adomo.duckdns.org
+anist.duckdns.org
+anit.ocry.com
+anyst.duckdns.org
+arma.dyndns.dk
+aus.mymx.ws
+baaba.ludocori.cl
+baba.ludocori.cl
+baneal.duckdns.org
+bloju.flnet.org
+bougle.duckdns.org
+boug.ydns.eu
+boul.hn.org
+caza.dyndns.dk
+daank.dyndns.dk
+deeke.cloudns.cc
+deju.dyndns.dk
+delond.duckdns.org
+dodos.duckdns.org
+donze.npff.co
+duka.wha.la
+edak.wha.la
+ersey.eurodyley.com
+finte.cloudns.cc
+freese.hn.org
+fresto.spdns.eu
+kinao.dyndns.dk
+koraas.mailfee.de
+koraas.mooo.com
+koram.idleplay.net
+korass.d2g.biz
+koron.idleplay.net
+leban.idleplay.net
+leban.jkub.com
+leco.mailfee.de
+leduta.duckdns.org
+mahendlrabrothers.com
+manas.hn.org
+manea.duckdns.org
+mard.idleplay.net
+masco.entrydns.org
+masev.idleplay.net
+matad.mooo.com
+moran.dyndns.dk
+morane.d2g.com
+ogem.nickmail.eu
+ogerma.mooo.com
+ogerm.ohbah.com
+oger.npff.co
+otes.myfirewall.org
+ouati.dropei.de
+ouati.ludocori.cl
+ouat.zzzz.io
+ousi.mailfee.de
+petilo.mooo.com
+pobal.mooo.com
+poz.ludocori.cl
+prav.jkub.com
+prav.npff.co
+seve.idleplay.net
+snoutnet.com
+stive.duckdns.org
+stiv.jkub.com
+sulta.duckdns.org
+tao.wikaba.com
+teobi.dyndns.dk
+toled.duckdns.org
+treest.duckdns.org
+trustedphototh.com
+vmi66036.contabo.host
+vmi72689.contabo.host
+www.ouati.dropei.de
+ycart.duckdns.org
+188.165.89.12
+213.136.85.203
+5.189.151.14
+82.192.81.129
+87.236.215.113
+91.109.22.107
+91.134.177.136
